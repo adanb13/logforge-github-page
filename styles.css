@@ -359,24 +359,6 @@ h3 {
   color: var(--muted);
 }
 
-.product-preview {
-  width: min(100%, 68rem);
-  margin: clamp(2rem, 5vw, 3rem) 0 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--brand-blue);
-  box-shadow: var(--shadow);
-}
-
-.product-preview img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
 .deposit-panel {
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -528,12 +510,57 @@ h3 {
 }
 
 .github-section {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  padding-bottom: clamp(9rem, 15vw, 13rem);
   background: #17201b;
   color: #ffffff;
+}
+
+.github-section > :not(.github-wordmarks) {
+  position: relative;
+  z-index: 1;
+}
+
+.github-wordmarks {
+  position: absolute;
+  right: 5vw;
+  bottom: clamp(1.4rem, 4vw, 2.8rem);
+  left: 5vw;
+  z-index: 0;
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+  color: rgba(255, 255, 255, 0.08);
+  letter-spacing: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.github-proof-label {
+  color: rgba(255, 255, 255, 0.38);
+  font-size: clamp(0.72rem, 1.1vw, 0.9rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.github-wordmark-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.45rem, 2vw, 1.2rem) clamp(0.9rem, 4vw, 3rem);
+  font-size: clamp(1.45rem, 4.5vw, 4.4rem);
+  font-weight: 900;
+  line-height: 0.95;
+}
+
+.github-wordmark-list span {
+  white-space: nowrap;
 }
 
 .github-section .eyebrow {
