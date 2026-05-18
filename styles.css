@@ -354,7 +354,8 @@ h3 {
 
 .feature-card p,
 .update-item p,
-.form-note {
+.form-note,
+.deposit-contact-note {
   color: var(--muted);
 }
 
@@ -482,6 +483,18 @@ h3 {
   font-size: 0.9rem;
 }
 
+.deposit-contact-note {
+  margin: 0.55rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.deposit-contact-note a {
+  color: var(--green-dark);
+}
+
 .updates-section {
   background: var(--paper);
 }
@@ -560,6 +573,18 @@ h3 {
   margin: 1rem 0 0;
   color: var(--muted);
   font-size: 0.88rem;
+}
+
+.terms-contact-note {
+  max-width: 62rem;
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.terms-contact-note a {
+  color: var(--green-dark);
+  font-weight: 800;
 }
 
 .site-footer {
