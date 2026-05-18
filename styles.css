@@ -313,6 +313,26 @@ h3 {
   color: var(--muted);
 }
 
+.overview-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 42rem) minmax(18rem, 28rem);
+  align-items: end;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  margin-bottom: 2rem;
+}
+
+.overview-heading .section-heading {
+  width: auto;
+  margin-bottom: 0;
+}
+
+.overview-note {
+  max-width: 28rem;
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -652,6 +672,16 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .overview-heading {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .overview-note {
+    max-width: 42rem;
+    margin-bottom: 0;
+  }
+
   .github-section {
     align-items: flex-start;
     flex-direction: column;
@@ -703,6 +733,7 @@ h3 {
   }
 
   .hero-copy,
+  .overview-note,
   .refund-line {
     overflow-wrap: break-word;
   }
