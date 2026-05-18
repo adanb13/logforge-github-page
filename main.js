@@ -1,15 +1,15 @@
 const STRIPE_PAYMENT_LINKS = {
-  personal: "REPLACE_WITH_PERSONAL_STRIPE_PAYMENT_LINK",
-  business: "REPLACE_WITH_BUSINESS_STRIPE_PAYMENT_LINK",
-  enterprise: "REPLACE_WITH_ENTERPRISE_STRIPE_PAYMENT_LINK",
+  personal: "https://buy.stripe.com/4gM5kE5qk4AU7r1cOd0kE00",
+  business: "https://buy.stripe.com/7sYaEY1a4ebu5iT3dD0kE01",
+  enterprise: "https://buy.stripe.com/aFa28scSMgjC26HbK90kE02",
 };
 
 const GITHUB_URL = "https://github.com/log-forge/logforge";
 
 const DEPOSIT_AMOUNTS = {
-  personal: 50,
-  business: 500,
-  enterprise: 5000,
+  personal: 49,
+  business: 499,
+  enterprise: 4999,
 };
 
 const TIER_LABELS = {

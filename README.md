@@ -16,16 +16,16 @@ Static GitHub Pages site for the LogForge refundable deposit page.
 
 The workflow in `.github/workflows/pages.yml` uploads the static site from the repository root. `.nojekyll` keeps GitHub Pages from running Jekyll against the site.
 
-## Before Accepting Deposits
+## Stripe Payment Links
 
-Replace the placeholder Stripe Payment Links in `main.js`:
+Stripe Payment Links are configured in `main.js`:
 
 ```js
 const STRIPE_PAYMENT_LINKS = {
-  personal: "https://buy.stripe.com/...",
-  business: "https://buy.stripe.com/...",
-  enterprise: "https://buy.stripe.com/...",
+  personal: "https://buy.stripe.com/4gM5kE5qk4AU7r1cOd0kE00",
+  business: "https://buy.stripe.com/7sYaEY1a4ebu5iT3dD0kE01",
+  enterprise: "https://buy.stripe.com/aFa28scSMgjC26HbK90kE02",
 };
 ```
 
-Until those values are replaced, clicking **Continue to Stripe** shows a warning instead of redirecting.
+If a link is cleared or invalid, clicking **Continue to Stripe** shows a warning instead of redirecting.

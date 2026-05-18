@@ -555,6 +555,13 @@ h3 {
   color: #343b36;
 }
 
+.terms-footnote {
+  max-width: 62rem;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
