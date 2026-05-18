@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LogForge Deposit</title>
+    <meta
+      name="description"
+      content="Reserve access to LogForge developer tools with a fully refundable Personal or Business deposit."
+    >
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logforge-logo16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logo-32x32.png">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logo-32x32.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="LogForge home">
+        <img class="brand-mark" src="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logforge-logo.svg" alt="" width="38" height="38">
+        <span>LogForge</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#deposit">Deposit</a>
+        <a href="#updates">Updates</a>
+        <a href="#terms">Terms</a>
+        <a id="githubHeaderLink" class="nav-cta" href="#github">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section id="deposit" class="hero" aria-labelledby="hero-title">
+        <figure class="hero-visual" aria-hidden="true">
+          <img
+            src="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logforge-home.png"
+            alt=""
+            width="1915"
+            height="932"
+            fetchpriority="high"
+            decoding="async"
+          >
+        </figure>
+
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Developer tooling deposits</p>
+            <h1 id="hero-title">LogForge Deposit</h1>
+          </div>
+
+          <form id="depositForm" class="deposit-panel" novalidate>
+            <fieldset class="tier-fieldset">
+              <legend>Deposit tier</legend>
+              <label class="tier-option">
+                <input type="radio" name="tier" value="personal" checked>
+                <span>
+                  <strong>Personal</strong>
+                  <small>Individual reservation</small>
+                </span>
+                <b>$50</b>
+              </label>
+              <label class="tier-option">
+                <input type="radio" name="tier" value="business">
+                <span>
+                  <strong>Business</strong>
+                  <small>Team reservation</small>
+                </span>
+                <b>$500</b>
+              </label>
+            </fieldset>
+
+            <div class="amount-row" aria-live="polite">
+              <span>Refundable deposit</span>
+              <strong id="depositAmount">$50</strong>
+            </div>
+
+            <p id="configMessage" class="config-message" role="alert" hidden></p>
+
+            <button id="submitButton" class="checkout-button" type="submit">
+              Continue to Stripe
+            </button>
+
+            <p class="form-note">
+              You will be redirected to the configured Stripe Payment Link for the
+              selected tier.
+            </p>
+          </form>
+
+          <div class="hero-details">
+            <p class="hero-copy">
+              Reserve early access to LogForge developer tools for log intake,
+              release intelligence, and production issue triage.
+            </p>
+            <div class="hero-actions">
+              <a class="button secondary-button" href="#updates">Upcoming updates</a>
+              <a class="button secondary-button" href="#terms">Refund terms</a>
+            </div>
+            <p class="refund-line">
+              Deposits are
+              <a href="#terms">fully refundable if LogForge does not deliver on its rolling release schedule</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview-section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">What LogForge is building</p>
+          <h2 id="overview-title">Operational tooling for teams that live in logs.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Unified log intake</h3>
+            <p>
+              Bring noisy runtime streams into a searchable workspace with
+              normalization, source context, and release-aware filtering.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Release signal tracking</h3>
+            <p>
+              Connect deployments to log patterns so teams can separate expected
+              rollout noise from regressions that need attention.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Developer-first workflows</h3>
+            <p>
+              Keep incident notes, trace links, and next actions close to the
+              logs without turning every investigation into a dashboard project.
+            </p>
+          </article>
+        </div>
+        <figure class="product-preview">
+          <img
+            src="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logforge-overview.gif"
+            alt="LogForge overview showing product navigation, log views, and workflow panels."
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+          >
+        </figure>
+      </section>
+
+      <section id="updates" class="updates-section" aria-labelledby="updates-title">
+        <div class="section-heading">
+          <p class="eyebrow">Premium roadmap</p>
+          <h2 id="updates-title">Upcoming LogForge updates.</h2>
+        </div>
+        <div class="updates-list">
+          <article class="update-item">
+            <span>01</span>
+            <div>
+              <h3>Premium release lanes</h3>
+              <p>
+                Early-access channels for teams that want controlled rollout of
+                new parsing, alerting, and reporting capabilities.
+              </p>
+            </div>
+          </article>
+          <article class="update-item">
+            <span>02</span>
+            <div>
+              <h3>Issue-ready export packs</h3>
+              <p>
+                Share focused bundles of logs, traces, deploy context, and
+                notes when an investigation needs to move into GitHub.
+              </p>
+            </div>
+          </article>
+          <article class="update-item">
+            <span>03</span>
+            <div>
+              <h3>Team policy controls</h3>
+              <p>
+                Business deposit holders get priority access to workspace roles,
+                retention controls, and audit-oriented account settings.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="github" class="github-section" aria-labelledby="github-title">
+        <div>
+          <p class="eyebrow">Open project trail</p>
+          <h2 id="github-title">Follow the public repository.</h2>
+          <p>
+            LogForge will use GitHub for public project notes, release tracking,
+            and implementation updates as the deposit program moves toward launch.
+          </p>
+        </div>
+        <a id="githubProjectLink" class="button github-button" href="#github">
+          View GitHub project
+        </a>
+      </section>
+
+      <section id="terms" class="terms-section" aria-labelledby="terms-title">
+        <div class="section-heading">
+          <p class="eyebrow">Refund terms</p>
+          <h2 id="terms-title">Concise deposit terms.</h2>
+        </div>
+        <ol class="terms-list">
+          <li>
+            Deposits are refundable reservations for LogForge early access; they
+            are not equity, ownership, or a guarantee of a specific feature.
+          </li>
+          <li>
+            LogForge will maintain a published rolling 90-day release schedule
+            for premium updates and publish material schedule changes before
+            they affect deposit holders.
+          </li>
+          <li>
+            If LogForge does not deliver a scheduled premium update inside the
+            active 90-day release window, deposit holders may request a full
+            refund of the Personal or Business deposit.
+          </li>
+          <li>
+            Refund requests will be matched to the original Stripe payment record
+            and returned through the original payment method when possible.
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top" aria-label="LogForge Deposit home">
+        <img class="footer-logo" src="https://raw.githubusercontent.com/log-forge/logforgeweb/main/assets/logforge-logo.svg" alt="" width="30" height="30">
+        <span>LogForge Deposit</span>
+      </a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#deposit">Choose tier</a>
+        <a href="#terms">Refund terms</a>
+      </nav>
+    </footer>
+  </body>
+</html>
