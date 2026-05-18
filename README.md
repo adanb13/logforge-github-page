@@ -24,6 +24,7 @@ Replace the placeholder Stripe Payment Links in `main.js`:
 const STRIPE_PAYMENT_LINKS = {
   personal: "https://buy.stripe.com/...",
   business: "https://buy.stripe.com/...",
+  enterprise: "https://buy.stripe.com/...",
 };
 ```
 

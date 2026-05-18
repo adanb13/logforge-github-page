@@ -1,6 +1,7 @@
 const STRIPE_PAYMENT_LINKS = {
   personal: "REPLACE_WITH_PERSONAL_STRIPE_PAYMENT_LINK",
   business: "REPLACE_WITH_BUSINESS_STRIPE_PAYMENT_LINK",
+  enterprise: "REPLACE_WITH_ENTERPRISE_STRIPE_PAYMENT_LINK",
 };
 
 const GITHUB_URL = "https://github.com/log-forge/logforge";
@@ -8,11 +9,13 @@ const GITHUB_URL = "https://github.com/log-forge/logforge";
 const DEPOSIT_AMOUNTS = {
   personal: 50,
   business: 500,
+  enterprise: 5000,
 };
 
 const TIER_LABELS = {
   personal: "Personal",
   business: "Business",
+  enterprise: "Enterprise",
 };
 
 window.STRIPE_PAYMENT_LINKS = STRIPE_PAYMENT_LINKS;
